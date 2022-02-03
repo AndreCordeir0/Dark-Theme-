@@ -9,9 +9,18 @@
 body {
     font-family: 'Inter', sans-serif;
     overflow-x: hidden;
-
+  
 }
+.principal{
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    text-align: left;
+    width: 1180px
 
+;
+}
 .dark {
     background: hsl(230, 17%, 14%);
 
@@ -20,14 +29,17 @@ body {
 .dark-mode-p {
     
     position: relative;
-    left: 1103px;
+    left: 953px;
     bottom: 17px;
 }
 
 .dark .dark-button i {
-    transform: translateX(0px);
+    transform: translateX(30px);
+    background: #2C2F3F;
 }
-
+.dark .dark-mode-p{
+    color: hsl(228, 12%, 44%);
+}
 .dark .section-social-card,
 .dark .section-grid-cards {
     background: hsl(228, 28%, 20%);
@@ -55,12 +67,12 @@ body {
     background: #F8F9FE;
     border-radius: 10px;
     height: 150px;
-
+width: 1164px;
 }
 
 .conteudo-topo {
     position: relative;
-    margin-left: 100px;
+
     left: 0px;
 }
 
@@ -79,7 +91,7 @@ body {
 .dark-button {
     position: relative;
     bottom: 43px;
-    left: 1200px;
+    left: 1050px;
     background-image: linear-gradient(to right, #43cea2 0%, #80d678 51%, #2482e0 100%);
     width: 55px;
     height: 26px;
@@ -100,7 +112,7 @@ body {
     background: white;
     z-index: 111;
     transition: 0.5s;
-    transform: translateX(30px);
+    transform: translateX(0px);
 }
 
 .dark-button:hover {
@@ -114,7 +126,6 @@ body {
     display: flex;
     flex-direction: row;
     gap: 30px;
-    left: 100px;
     bottom: 30px;
 
 }
@@ -214,7 +225,7 @@ body {
     position: relative;
     top: 90px;
     gap: 40px;
-    left: 102px;
+
     margin-bottom: 190px;
 
 }
@@ -230,7 +241,7 @@ body {
 
 .content-2 {
     position: relative;
-    left: 99px;
+    
     top: 30px;
     color: hsl(228, 12%, 44%);
 }
@@ -272,4 +283,187 @@ body {
 section:hover {
     background: hsl(230, 90%, 92%);
     cursor: pointer;
+}
+
+
+
+
+@media (max-width:1200px){
+    .section-social{
+        display: grid;
+        grid-template-columns: repeat(2,270px);
+        left: 30px;
+       }
+       .dark-button{
+        left: 580px;
+        top: -30px;
+            }
+            .dark-mode-p{
+        left: 558px;
+        top: -45px;
+            }
+            .content-2{
+             left: 30px;
+             }
+            .section-grid{
+             display: grid;
+              left: 30px;
+             padding-left: 0px;
+             gap: 30px;
+             grid-template-columns: repeat(2,260px);
+            }
+}
+
+
+
+@media (max-width:1024px){
+    .section-social{
+        display: grid;
+        grid-template-columns: repeat(2,250px);
+        left: 0px;
+       }
+       .dark-button{
+           left: 580px;
+           top: -30px;
+               }
+               .dark-mode-p{
+           left: 558px;
+           top: -45px;
+               }
+               .content-2{
+                left: 0px;
+                }
+               .section-grid{
+                display: grid;
+                padding-left: 0px;
+                gap: 10px;
+                grid-template-columns: repeat(2,260px);
+               }
+
+}
+@media (max-width:768px){
+    .section-social{
+        flex-wrap:wrap;
+        display: flex;
+        flex-direction: column;
+        left:80px;
+        
+    }
+    .conteudo-topo h1{
+    font-size: 20px;
+    left: 0px;
+    position: relative;
+    }
+    .conteudo-topo h3{
+    top: 20px;
+    left: 0px;
+    position: relative;
+    padding-bottom: 10px;
+    }
+    
+    .section-grid{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 300px;
+     left: 40px;
+    }
+  
+    
+    .topo-da-pagina{
+        width: 415px;
+        text-align: center;
+            
+    }
+    .topo-da-pagina {
+    height: 200px;
+    }
+    .content-2{
+    left: 63px;
+    }
+    .dark-button{
+       
+left: 103px;
+top: 10px;
+    }
+    .dark-mode-p{
+left: -120px;
+top: 35px;
+    }
+    #celular{
+        width: 390px;
+        height: 1px;
+        background: white;
+        z-index: 11;
+        position: absolute;
+        left: 5px;
+
+
+    }
+}
+
+
+
+
+/*Outra Medida*/
+@media (max-width:580px){
+    
+    .section-social{
+        flex-wrap:wrap;
+        display: flex;
+        flex-direction: column;
+        left:40px;
+        
+    }
+    .conteudo-topo h1{
+    font-size: 20px;
+    left: -30px;
+    position: relative;
+    }
+    .conteudo-topo h3{
+    top: 20px;
+    left: -30px;
+    position: relative;
+    padding-bottom: 10px;
+    }
+    
+    .section-grid{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 300px;
+     left: -10px;
+    }
+  
+    
+    .topo-da-pagina{
+        width: 415px;
+        text-align: center;
+            
+    }
+    .topo-da-pagina {
+    height: 200px;
+    }
+    .content-2{
+    left: 63px;
+    }
+    .dark-button{
+       
+left: 73px;
+top: 10px;
+    }
+    .dark-mode-p{
+left: -120px;
+top: 35px;
+    }
+    #celular{
+        width: 390px;
+        height: 1px;
+        background: white;
+        z-index: 11;
+        position: absolute;
+        left: 5px;
+
+
+    }
 }
